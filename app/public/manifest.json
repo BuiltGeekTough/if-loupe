@@ -1,0 +1,9 @@
+{
+  "name": "if-loupe",
+  "short_name": "Loupe",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#457b9d",
+  "icons": []
+}

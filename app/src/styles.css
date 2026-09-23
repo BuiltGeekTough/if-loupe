@@ -1,0 +1,55 @@
+/* Mobile-first base. Wider layouts add breathing room via media queries. */
+
+* { box-sizing: border-box; }
+
+html, body, #root {
+  margin: 0;
+  height: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+.if-loupe-app {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.if-loupe-header {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  align-items: baseline;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.if-loupe-header h1 {
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+.if-loupe-subtitle {
+  font-size: 0.85rem;
+  color: #555;
+}
+
+.if-loupe-main {
+  flex: 1;
+  min-height: 0;
+}
+
+.if-loupe-graph-container {
+  width: 100%;
+  height: 100%;
+  min-height: 300px;
+}
+
+/* Tablet and up: more generous spacing */
+@media (min-width: 768px) {
+  .if-loupe-header {
+    padding: 1rem 1.5rem;
+  }
+  .if-loupe-header h1 {
+    font-size: 1.4rem;
+  }
+}
